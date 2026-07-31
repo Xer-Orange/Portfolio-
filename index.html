@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Irshad</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700&family=Inter:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
+<link rel="stylesheet" href="style.css">
+<base target="_blank">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav id="main-nav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo" target="_self">MI.</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" target="_self">Home</a></li>
+      <li><a href="#about" target="_self">About</a></li>
+      <li><a href="#journey" target="_self">Journey</a></li>
+      <li><a href="#projects" target="_self">Projects</a></li>
+      <li><a href="#certificates" target="_self">Certificates</a></li>
+      <li><a href="#contact" target="_self">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="dots"></div>
+  <div class="content">
+    <h1 class="headline" data-editable>Aspiring</h1>
+    <h1 class="headline italic" data-editable>AI Engineer</h1>
+    <div class="tagline">
+      <span class="bar"></span>
+      <span class="text" data-editable>Learn &middot; Reason &middot; Adapt &middot; Evolve</span>
+    </div>
+    <hr class="divider">
+    <ul class="skills">
+      <li data-editable><span class="slash">/</span> Machine Learning</li>
+      <li data-editable><span class="slash">/</span> Data Analysis</li>
+      <li data-editable><span class="slash">/</span> AI Applications</li>
+    </ul>
+  </div>
+  <div class="photo-wrap">
+    <div class="photo-frame">
+        <img src="Images/h.jpg" alt="Muhammad Irshad" style="position:absolute;inset:clamp(4px, 1.4vw, 10px);width:calc(100% - clamp(8px, 2.8vw, 20px));height:calc(100% - clamp(8px, 2.8vw, 20px));object-fit:cover;">
+
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-inner">
+    <div class="dots"></div>
+    <div class="about-photo-wrap" id="photoWrap">
+      <div class="photo-frame" id="photoFrame">
+        <img src="Images/p.png" alt="Muhammad Irshad" style="position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);object-fit:cover;">
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="tagline"><span class="bar"></span><span class="text" data-editable>About me</span></div>
+      <h2 class="about-heading" data-editable>Curious by default, <em>building with intent</em></h2>
+      <p class="about-text" data-editable>I got into AI the way most people do lately, by being endlessly curious about how machines seem to understand us. That curiosity turned into hands-on practice: cleaning messy datasets, training my first models, and slowly learning to tell the difference between a model that looks right and one that actually is.</p>
+      <p class="about-text" data-editable>These days I split my time between structured learning and shipping small, real projects, because a concept only really sticks once I've broken it and fixed it myself. I'm most interested in the practical middle ground between research and product: taking a model out of a notebook and into something people can actually use.</p>
+      <div class="about-stats">
+        <div class="stat"><span class="num" data-editable>20+</span><span class="label" data-editable>Projects built</span></div>
+        <div class="stat"><span class="num" data-editable>3</span><span class="label" data-editable>Years learning</span></div>
+        <div class="stat"><span class="num" data-editable>12+</span><span class="label" data-editable>Tools and frameworks</span></div>
+      </div>
+      <div class="about-cta">
+        <a href="#" class="btn-primary" target="_self">Download resume</a>
+        <a href="#contact" class="btn-secondary" target="_self">Get in touch &rarr;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+  <div class="journey-section">
+    <div class="journey-header" id="journey-header">
+      <h2>The Evolution of My Journey</h2>
+      <p>A chronological narrative of my academic growth, technical exploration, and the milestones that shaped my path.</p>
+    </div>
+
+    <div class="timeline-container" id="timeline-container">
+      <div class="timeline-line"></div>
+      <div class="timeline-progress" id="timeline-progress"></div>
+
+      <div class="timeline-item" data-index="0">
+        <div class="timeline-node">
+          <div class="node-inner">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"/>
+            </svg>
+          </div>
+        </div>
+        <div class="timeline-card left">
+          <span class="card-badge">2025 &mdash; Present</span>
+          <h3 class="card-title">B.Tech in Artificial Intelligence &amp; Data Science</h3>
+          <p class="card-institution">AL AMEEN College of Engineering</p>
+          <p class="card-description">
+            Currently in my second year, focusing on core AI concepts, data structures, and algorithms.
+          </p>
+          <ul class="card-achievements">
+            <li>Actively building foundational projects in machine learning</li>
+            <li>Participating in technical coding environments and college tech events</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-index="1">
+        <div class="timeline-node">
+          <div class="node-inner">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+            </svg>
+          </div>
+        </div>
+        <div class="timeline-card right">
+          <span class="card-badge">2023 &mdash; 2025</span>
+          <h3 class="card-title">Higher Secondary Education</h3>
+          <p class="card-institution">GHSS KADAMBUR School</p>
+          <p class="card-description">
+            Graduated with a strong foundation in science and mathematics, paving the way for my engineering journey.
+          </p>
+          <ul class="card-achievements">
+            <li>Excelled in core science subjects</li>
+            <li>Actively participated in school academic programs</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="portfolio-section">
+    <div class="section-label">SELECTED WORKS</div>
+
+    <div class="portfolio-layout">
+      <div class="projects-scroll-container" id="projectsContainer">
+        <div class="projects-wrapper">
+
+          <div class="project-slide" data-skills="react,tailwind,typescript,python,serverless">
+            <div class="project-header">
+              <h2 class="project-title">DASH <span class="arrow-icon">&#8599;</span></h2>
+              <span class="project-meta">DESKTOP APP / 2024</span>
+            </div>
+            <div class="project-image-wrapper">
+              <div class="project-image">project image</div>
+              <div class="project-overlay"><button class="view-btn">View Project</button></div>
+            </div>
+            <p class="project-desc">DASH &mdash; Distributed Adaptive Serverless Hosting offers a peer-to-peer, cost-effective, and efficient alternative for hosting serverless. It delivers a streamlined solution designed with developers in mind, providing simplicity and effectiveness without compromising performance.</p>
+            <div class="mobile-skills">
+              <span class="m-skill">React.js</span><span class="m-skill">Tailwind CSS</span><span class="m-skill">TypeScript</span><span class="m-skill">Python</span><span class="m-skill">Serverless</span>
+            </div>
+          </div>
+
+          <div class="project-slide" data-skills="nextjs,firebase,ai,stable-diffusion">
+            <div class="project-header">
+              <h2 class="project-title">FLASH DRIVE <span class="arrow-icon">&#8599;</span></h2>
+              <span class="project-meta">WEBSITE / 2023</span>
+            </div>
+            <div class="project-image-wrapper">
+              <div class="project-image">project image</div>
+              <div class="project-overlay"><button class="view-btn">View Project</button></div>
+            </div>
+            <p class="project-desc">A Next.js web platform featuring an AI image generator with custom-trained Stable Diffusion model and arcade games. Built with Firebase and EpicRealism image model, it evolved from a DBMS course project into a playground for implementing advanced web technologies.</p>
+            <div class="mobile-skills">
+              <span class="m-skill">Next.js</span><span class="m-skill">Firebase</span><span class="m-skill">AI/ML</span><span class="m-skill">Stable Diffusion</span>
+            </div>
+          </div>
+
+          <div class="project-slide" data-skills="react,tailwind,typescript,python,ai,firebase">
+            <div class="project-header">
+              <h2 class="project-title">Tuples <span class="arrow-icon">&#8599;</span></h2>
+              <span class="project-meta">WEBSITE / 2024</span>
+            </div>
+            <div class="project-image-wrapper">
+              <div class="project-image">project image</div>
+              <div class="project-overlay"><button class="view-btn">View Project</button></div>
+            </div>
+            <p class="project-desc">A digital campus companion built for students to connect, share interests, and collaborate. Features community posts, friend suggestions, and real-time chat with a clean, modern interface.</p>
+            <div class="mobile-skills">
+              <span class="m-skill">React.js</span><span class="m-skill">Tailwind CSS</span><span class="m-skill">TypeScript</span><span class="m-skill">Python</span><span class="m-skill">Firebase</span>
+            </div>
+          </div>
+
+          <div class="project-slide" data-skills="solidity,ethereum,blockchain,ipfs,react">
+            <div class="project-header">
+              <h2 class="project-title">ChainVault <span class="arrow-icon">&#8599;</span></h2>
+              <span class="project-meta">WEB3 DAPP / 2023</span>
+            </div>
+            <div class="project-image-wrapper">
+              <div class="project-image">project image</div>
+              <div class="project-overlay"><button class="view-btn">View Project</button></div>
+            </div>
+            <p class="project-desc">A decentralized storage solution built on Ethereum and IPFS. Users can securely store, share, and manage files with blockchain-backed ownership and smart contract automation.</p>
+            <div class="mobile-skills">
+              <span class="m-skill">Solidity</span><span class="m-skill">Ethereum</span><span class="m-skill">IPFS</span><span class="m-skill">React.js</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skills-panel" id="skillsPanel">
+        <div class="skills-heading">TECHNOLOGY</div>
+        <div class="skills-grid" id="skillsGrid">
+          <div class="skill-tag" data-skill="react"><span class="skill-icon">&#9883;</span> React.js</div>
+          <div class="skill-tag" data-skill="nextjs"><span class="skill-icon">N</span> Next.js</div>
+          <div class="skill-tag" data-skill="ai"><span class="skill-icon">&#9673;</span> AI/ML</div>
+          <div class="skill-tag" data-skill="flutter"><span class="skill-icon">F</span> Flutter</div>
+          <div class="skill-tag" data-skill="tailwind"><span class="skill-icon">~</span> Tailwind CSS</div>
+          <div class="skill-tag" data-skill="typescript"><span class="skill-icon">TS</span> TypeScript</div>
+          <div class="skill-tag" data-skill="python"><span class="skill-icon">Py</span> Python</div>
+          <div class="skill-tag" data-skill="stable-diffusion"><span class="skill-icon">&#10022;</span> Stable Diffusion</div>
+          <div class="skill-tag" data-skill="blockchain"><span class="skill-icon">&#11040;</span> Blockchain</div>
+          <div class="skill-tag" data-skill="solidity"><span class="skill-icon">S</span> Solidity</div>
+          <div class="skill-tag" data-skill="tauri"><span class="skill-icon">T</span> Tauri</div>
+          <div class="skill-tag" data-skill="p2p"><span class="skill-icon">||</span> Peer to Peer</div>
+          <div class="skill-tag" data-skill="serverless"><span class="skill-icon">&#9729;</span> Serverless</div>
+          <div class="skill-tag" data-skill="ipfs"><span class="skill-icon">&#10052;</span> IPFS</div>
+          <div class="skill-tag" data-skill="ethereum"><span class="skill-icon">&#9830;</span> Ethereum</div>
+          <div class="skill-tag" data-skill="firebase"><span class="skill-icon">&#128293;</span> Firebase</div>
+          <div class="skill-tag" data-skill="mongodb"><span class="skill-icon">M</span> MongoDB</div>
+          <div class="skill-tag" data-skill="postgresql"><span class="skill-icon">P</span> PostgreSQL</div>
+          <div class="skill-tag" data-skill="mysql"><span class="skill-icon">My</span> MySQL</div>
+          <div class="skill-tag" data-skill="kotlin"><span class="skill-icon">K</span> Kotlin</div>
+          <div class="skill-tag" data-skill="dart"><span class="skill-icon">D</span> Dart</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-dots" id="scrollDots"></div>
+  </div>
+</section>
+
+<!-- CERTIFICATES & ACHIEVEMENTS -->
+<section id="certificates">
+  <div class="starfield"></div>
+
+  <div class="cert-container header">
+    <p class="label">Recognition</p>
+    <h2 class="title">Certificates &amp; Achievements</h2>
+  </div>
+
+  <div class="cert-container" id="cert-container">
+    <div class="preview-wrap" id="preview-wrap">
+      <div class="preview-card" id="preview-card"></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div id="cs-dots"></div>
+
+  <div class="cs-content">
+    <h2 class="cs-anim-1">Let's connect</h2>
+    <p class="cs-desc cs-anim-2">Whether it's an internship, project collaboration, or just a chat &mdash; drop a message below and I'll get back to you.</p>
+
+    <div class="contact-row">
+      <form id="contactForm" novalidate class="contact-form cs-anim-3">
+        
+        <div id="cs-error-banner" class="cs-form-banner cs-form-banner-error" style="display: none;" role="alert">
+          Please fill in every field with a valid format before sending.
+        </div>
+        <div id="cs-success-banner" class="cs-form-banner cs-form-banner-success" style="display: none;" role="status">
+          Message sent &mdash; I'll get back to you soon.
+        </div>
+
+        <div class="name-email-grid">
+          <div class="cs-field-wrap cs-anim-4" id="wrap-name">
+            <label for="name" class="cs-field-label">Name</label>
+            <div class="input-rel">
+              <input type="text" id="name" name="name" class="cs-field" placeholder="John Doe">
+              <div id="pulse-container-name"></div>
+            </div>
+            <p class="cs-error-msg" id="error-name" style="display: none;" role="alert">
+              <span class="cs-error-icon" aria-hidden="true">!</span><span class="err-txt"></span>
+            </p>
+          </div>
+          
+          <div class="cs-field-wrap cs-anim-5" id="wrap-email">
+            <label for="email" class="cs-field-label">Email</label>
+            <div class="input-rel">
+              <input type="email" id="email" name="email" class="cs-field" placeholder="john@example.com">
+              <div id="pulse-container-email"></div>
+            </div>
+            <p class="cs-error-msg" id="error-email" style="display: none;" role="alert">
+              <span class="cs-error-icon" aria-hidden="true">!</span><span class="err-txt"></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="cs-field-wrap cs-anim-6" id="wrap-subject" style="margin-top: 20px;">
+          <label for="subject" class="cs-field-label">Subject</label>
+          <div class="input-rel">
+            <input type="text" id="subject" name="subject" class="cs-field" placeholder="Project Inquiry">
+            <div id="pulse-container-subject"></div>
+          </div>
+          <p class="cs-error-msg" id="error-subject" style="display: none;" role="alert">
+            <span class="cs-error-icon" aria-hidden="true">!</span><span class="err-txt"></span>
+          </p>
+        </div>
+
+        <div class="cs-field-wrap cs-anim-7" id="wrap-message" style="margin-top: 20px;">
+          <label for="message" class="cs-field-label">Message</label>
+          <div class="input-rel">
+            <textarea id="message" name="message" rows="5" class="cs-field" placeholder="Tell me about your project..."></textarea>
+            <div id="pulse-container-message"></div>
+          </div>
+          <p class="cs-error-msg" id="error-message" style="display: none;" role="alert">
+            <span class="cs-error-icon" aria-hidden="true">!</span><span class="err-txt"></span>
+          </p>
+        </div>
+
+        <button type="submit" class="cs-btn cs-anim-8">
+          Send Message
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm cs-btn-arrow">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
+          </svg>
+        </button>
+      </form>
+
+      <div class="links-wrap cs-anim-5">
+        <div class="links-card">
+          <h3>Direct Links</h3>
+          <div class="links-list">
+            
+            <a href="https://github.com/Xer-Orange" target="_blank" rel="noreferrer" class="cs-link-row cs-anim-6">
+              <div class="cs-link-left">
+                <span class="cs-link-glyph">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm cs-link-icon-svg">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </span>
+                <div class="cs-link-text">
+                  <p class="cs-link-title">GitHub</p>
+                  <p class="cs-link-subtitle">github.com/Xer-Orange</p>
+                </div>
+              </div>
+              <span class="cs-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+                  <line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+
+            <a href="https://linkedin.com/in/MuhammadIrshadM" target="_blank" rel="noreferrer" class="cs-link-row cs-anim-7">
+              <div class="cs-link-left">
+                <span class="cs-link-glyph">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm cs-link-icon-svg">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </span>
+                <div class="cs-link-text">
+                  <p class="cs-link-title">LinkedIn</p>
+                  <p class="cs-link-subtitle">linkedin.com/in/MuhammadIrshadM</p>
+                </div>
+              </div>
+              <span class="cs-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+                  <line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+
+            <a href="mailto:orange974746@gmail.com" class="cs-link-row cs-anim-8">
+              <div class="cs-link-left">
+                <span class="cs-link-glyph">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm cs-link-icon-svg">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22 6 12 13 2 6"></polyline>
+                  </svg>
+                </span>
+                <div class="cs-link-text">
+                  <p class="cs-link-title">Email</p>
+                  <p class="cs-link-subtitle">orange974746@gmail.com</p>
+                </div>
+              </div>
+              <span class="cs-link-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-sm">
+                  <line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="mi-footer">
+  <div class="mi-footer__container">
+    
+    <!-- Gold Accent Divider -->
+    <div class="mi-footer__divider"></div>
+    
+    <!-- Main Grid -->
+    <div class="mi-footer__grid">
+      
+      <!-- Brand -->
+      <div class="mi-footer__brand">
+        <a href="#hero" target="_self" class="mi-footer__logo">Muhammad Irshad</a>
+        <p class="mi-footer__tagline">Crafting digital experiences with passion &amp; precision.</p>
+        <div class="mi-footer__social">
+          <a href="https://github.com/Xer-Orange" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+          <a href="https://linkedin.com/in/MuhammadIrshadM" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Navigation -->
+      <nav class="mi-footer__nav" aria-label="Footer Navigation">
+        <h4 class="mi-footer__heading">Navigate</h4>
+        <ul class="mi-footer__links">
+          <li><a href="#hero" target="_self" class="mi-footer__link">Home</a></li>
+          <li><a href="#about" target="_self" class="mi-footer__link">About</a></li>
+          <li><a href="#journey" target="_self" class="mi-footer__link">Journey</a></li>
+          <li><a href="#projects" target="_self" class="mi-footer__link">Projects</a></li>
+          <li><a href="#certificates" target="_self" class="mi-footer__link">Certificates &amp; Achievements</a></li>
+          <li><a href="#contact" target="_self" class="mi-footer__link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <!-- Contact -->
+      <div class="mi-footer__contact">
+        <h4 class="mi-footer__heading">Get in Touch</h4>
+        <a href="mailto:orange974746@gmail.com" class="mi-footer__email">orange974746@gmail.com</a>
+        <p class="mi-footer__status">Open for opportunities</p>
+      </div>
+      
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="mi-footer__bottom">
+      <p class="mi-footer__copyright">&copy; <span id="mi-year"></span> Muhammad Irshad. All rights reserved.</p>
+      <p class="mi-footer__craft">Crafted with care</p>
+    </div>
+    
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button class="mi-back-to-top" id="miBackToTop" aria-label="Scroll back to top" title="Back to top">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
